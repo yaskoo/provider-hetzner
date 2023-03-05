@@ -1,0 +1,13 @@
+apiVersion: cloud.hetzner.crossplane.io/v1alpha1
+kind: Firewall
+metadata:
+  name: my-firewall
+spec:
+  forProvider:
+    rules:
+      - description: allow vpn network
+        port: "443"
+        direction: in
+        protocol: tcp
+        source_ips:
+          - "93.123.21.124/32"

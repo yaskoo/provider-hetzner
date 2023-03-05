@@ -1,0 +1,17 @@
+apiVersion: cloud.hetzner.crossplane.io/v1alpha1
+kind: Server
+metadata:
+  name: yasko-server
+spec:
+  forProvider:
+    serverType: cx11
+    image: ubuntu-20.04
+    location: nbg1
+    labels:
+      test: "testing"
+    startAfterCreate: false
+  providerConfigRef:
+    name: default
+  writeConnectionSecretToRef:
+    namespace: crossplane-system
+    name: yasko-server-password

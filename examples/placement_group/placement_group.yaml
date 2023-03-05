@@ -1,0 +1,8 @@
+apiVersion: cloud.hetzner.crossplane.io/v1alpha1
+kind: PlacementGroup
+metadata:
+  name: my-placement-group
+spec:
+  forProvider:
+    type: spread
+    labels:

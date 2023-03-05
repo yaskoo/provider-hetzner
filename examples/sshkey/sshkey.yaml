@@ -1,0 +1,9 @@
+apiVersion: cloud.hetzner.crossplane.io/v1alpha1
+kind: SSHKey
+metadata:
+  name: yasko-public-key
+spec:
+  forProvider:
+    publicKey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC4CZ3YnS9LMBQoFhzoG/jwf/GU6j93JXSqSpuz0w8Zyt1+50bVbCivMvnfo/VPoyeCnZMfDuw5LYsAqAPUE/eODZY8hrJC4GUVgaYfWnHe8iMNKHqduN4dvwmK3M2ddkqMoT0wqINYFJiOtDgFIpRNtIuN1UKGDX2NBG5v0fJHJ6kesMgzu9ywOvaShoQoFgxEs+VitXFiYA62+4CJ7Xb8YAZ+SnA7iv2MDkrWPKZRxE/NYU1BhQAOKaldhfwI+ZmD6OQlPD2sbom5qye9deQL6hI3z/Wh/xQP0dUF17DAqVVxChvKxNF1/leDg3MqPkQSGNeB8BJWpGk14+Wc20wJ yasen.terziivanov@ontotext.com
+    labels:
+      test: "yes"
